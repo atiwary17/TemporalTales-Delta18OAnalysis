@@ -70,7 +70,7 @@ def plot_data(sheet_key):
 
 # Function to check event capture
 def check_event_capture():
-    names = ['Red_sea', 'Gulf_of_Oman', 'F1', 'F2', 'F3']
+    names = ['A', 'B', 'C', 'D', 'E']
     name_dict = {i+1: name for i, name in enumerate(names)}
     
     print("Available Plots:")

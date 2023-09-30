@@ -72,41 +72,50 @@ def plot_data(sheet_key):
 # Initialize flags outside the function
 flag_correct = 0
 flag_wrong = 0
+# Initialize flags outside the function
+flag_correct = 0
+flag_wrong = 0
 
 # Function to check event capture
 def check_event_capture():
+    global flag_correct, flag_wrong  # Declare the flags as global variables
+    
     names = ['A', 'B', 'C', 'D', 'E']
     name_dict = {i+1: name for i, name in enumerate(names)}
     
+    print("\n--- Event Capture Checker ---")
     print("Available Plots:")
     for key, name in name_dict.items():
-        print(f"{key}")
+        print(f"{key}: {name}")
     
-    selected_key = int(input("Enter the number of the plot you want to check: "))
+    selected_key = int(input("\nEnter the number of the plot you want to check: "))
     
     selected_sheet = name_dict.get(selected_key)
  
     if selected_key == 4:
-        print(" \n Congratulations! The selected plot ('Gulf_of_Oman') has captured the 4.2 k event.\n ")
+        print("\nCongratulations! The selected plot ('Gulf_of_Oman') has captured the 4.2 k event.\n")
         flag_correct = flag_correct + 1
     elif selected_key == 2:
-        print(f" \n The selected plot ('Red_sea') has captured the the 4.2 k event. \n ")
+        print(f"\nThe selected plot ('Red_sea') has captured the the 4.2 k event.\n")
         flag_correct = flag_correct + 1
     elif selected_key in [1, 3, 5]:
-        print(f" \nThe selected plot ('{selected_key}') has not captured the 4.2 k event.\n ")
+        print(f"\nThe selected plot ('{name_dict[selected_key]}') has not captured the 4.2 k event.\n")
         flag_wrong = flag_wrong + 1 
     else:
-        print(" \n Invalid selection. Please choose a valid plot. \n ")
+        print("\nInvalid selection. Please choose a valid plot.\n")
     
     user_input = input("Are you done? (Enter 'y' if done, or any other key to continue): ")
     
     if user_input == 'y' or user_input.lower() == 'done':
+        print("\n--- Summary ---")
         if flag_correct == 1:
-            print("\n You were on the track but you missed a few. \n")
+            print("\nYou were on the right track but missed a few. Keep exploring!\n")
         elif flag_correct > 1: 
-            print("\n Congratulations, you found all the places that captured the 4.2 Ka event! \n")
+            print("\nCongratulations, you found all the places that captured the 4.2 Ka event! Great job!\n")
+        else:
+            print("\nYou missed the plots that captured the 4.2 k event. Keep searching for clues!\n")
         print(f'Number of correct attempts: {flag_correct}')
-        print(f'Number of failed attempts: {flag_wrong}')
+        print(f'Number of failed attempts: {flag_wrong}\n')
         # Reset flags to zero when the user quits
         flag_correct = 0
         flag_wrong = 0

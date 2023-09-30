@@ -6,9 +6,9 @@ def get_video_guide():
   
   # Display the embedded YouTube video
   return HTML(html_code)
-!pip3 install pandas
+#!pip3 install pandas
 import pandas as pd
-!pip3 install matplotlib
+#!pip3 install matplotlib
 import matplotlib.pyplot as plt
 
 def clean_and_visualize_data(input_df):
@@ -35,7 +35,7 @@ def clean_and_visualize_data(input_df):
     plt.show()
 
     return input_df
-!pip3 install seaborn
+#!pip3 install seaborn
 import seaborn as sns
 # Specify the raw file URL on GitHub
 github_raw_url = 'https://raw.githubusercontent.com/atiwary17/TemporalTales-Delta18OAnalysis/main/data/Data.xlsx'

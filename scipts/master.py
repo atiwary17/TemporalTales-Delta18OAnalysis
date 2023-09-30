@@ -6,4 +6,5 @@ def get_video_guide():
   
   # Display the embedded YouTube video
   return HTML(html_code)
-  
+
+

@@ -35,7 +35,7 @@ def clean_and_visualize_data(input_df):
     plt.show()
 
     return input_df
-
+!pip3 install seaborn
 import seaborn as sns
 # Specify the raw file URL on GitHub
 github_raw_url = 'https://raw.githubusercontent.com/atiwary17/TemporalTales-Delta18OAnalysis/main/data/Data.xlsx'

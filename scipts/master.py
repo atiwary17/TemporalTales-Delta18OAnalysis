@@ -81,13 +81,13 @@ def check_event_capture():
     flag = 0
     
     selected_sheet = name_dict.get(selected_key)
-    if selected_key == 1:
+    if selected_key == 4:
         print(" \n Congratulations! The selected plot ('Gulf_of_Oman') has captured the 4.2 k event.\n ")
         flag = flag + 1
     elif selected_key == 2:
         print(f" \n The selected plot ('Red_sea') has captured the the 4.2 k event. \n ")
         flag = flag + 1
-    elif selected_key in [3, 4, 5]:
+    elif selected_key in [1, 3, 5]:
         print(f" \nThe selected plot ('{selected_key}') has not captured the 4.2 k event.\n ")
     else:
         print(" \n Invalid selection. Please choose a valid plot. \n ")

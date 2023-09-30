@@ -6,8 +6,9 @@ def get_video_guide():
   
   # Display the embedded YouTube video
   return HTML(html_code)
-  
+!pip3 install pandas
 import pandas as pd
+!pip3 install matplotlib
 import matplotlib.pyplot as plt
 
 def clean_and_visualize_data(input_df):

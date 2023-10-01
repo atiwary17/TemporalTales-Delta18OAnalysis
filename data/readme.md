@@ -2,7 +2,7 @@
 
 ## Overview
 
-This dataset comprises two columns: "age_CE" and "d18O." The "age_CE" column represents chronological ages in Common Era (CE), while the "d18O" column contains delta 18 O (δ18O) measurements. δ18O is a vital isotopic proxy used in paleoclimatology to infer past climate conditions.
+This dataset includes "age_CE" (Chronological Age in Common Era) and "d18O" (Delta 18 O or δ18O) measurements. δ18O is a crucial isotopic proxy used in paleoclimatology to infer past climate conditions.
 
 ## Data Source
 
@@ -12,7 +12,7 @@ This dataset comprises two columns: "age_CE" and "d18O." The "age_CE" column rep
 
 - **Columns:**
   - `age_CE`: Chronological age in Common Era (CE).
-  - `d18O`: Delta 18 O (δ18O) measurement for each age.
+  - `d18O`: δ18O measurement for each age.
 
 - **Sample Data:**
 
@@ -22,16 +22,16 @@ This dataset comprises two columns: "age_CE" and "d18O." The "age_CE" column rep
   | 1100   | -16.8 ‰ |
   | 1200   | -14.5 ‰ |
 
-## Data Usage
+## Usage
 
-This dataset is suitable for various analyses, including:
+Suitable for:
 
-- Paleoclimatology studies
+- Paleoclimatology
 - Climate change research
-- Geochemical investigations
-- Environmental research
+- Geochemistry
+- Environmental studies
 
-## Data License
+## License
 
 [Specify the data license if applicable, e.g., Creative Commons, public domain, or any usage restrictions.]
 
@@ -41,12 +41,8 @@ This dataset is suitable for various analyses, including:
 
 ## Contributing
 
-Contributions to this dataset are welcome. If you have additional data, corrections, or improvements, please open an issue or create a pull request.
-
-## Acknowledgments
-
-[Optional: Acknowledge the sources or individuals who contributed to the dataset.]
+Contributions are welcome. For additional data, corrections, or improvements, please open an issue or create a pull request.
 
 ## Contact
 
-For inquiries or further information about this dataset, please contact [Your Name or Organization] at [Your Contact Email].
+For inquiries or more information, contact [Your Name or Organization] at [Your Contact Email].

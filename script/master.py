@@ -104,9 +104,9 @@ def check_event_capture():
     else:
         print("\nInvalid selection. Please choose a valid plot.\n")
     
-    user_input = input("Do you still think, there are any other plots that have captured the 4.2 Ka event? (Enter any other key to continue, or 'y' to finish): ")
+    user_input = input("Do you still think, there are any other plots that have captured the 4.2 Ka event? (Enter any other key to continue, or 'no' to finish): ")
 
-    if user_input == 'y' or user_input.lower() == 'done':
+    if user_input == 'no' or user_input.lower() == 'done':
         print("\n--- Summary ---")
         if flag_correct == 1:
             print("\nYou were on the right track but missed a few. Keep exploring!\n")

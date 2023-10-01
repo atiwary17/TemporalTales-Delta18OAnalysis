@@ -88,7 +88,7 @@ def check_event_capture():
     for key, name in name_dict.items():
         print(f"{key}: {name}")
     
-    selected_key = int(input("\nEnter the number of the plot you want to check: "))
+    selected_key = int(input("\nEnter the plot number (e.g., 1, 2, 3, 4, 5) which you think has captured the 4.2 Ka event: "))
     
     selected_sheet = name_dict.get(selected_key)
  
@@ -104,8 +104,8 @@ def check_event_capture():
     else:
         print("\nInvalid selection. Please choose a valid plot.\n")
     
-    user_input = input("Are you done? (Enter 'y' if done, or any other key to continue): ")
-    
+    user_input = input("Do you still think, there are any other plots that have captured the 4.2 Ka event? (Enter any other key to continue, or 'y' to finish): ")
+
     if user_input == 'y' or user_input.lower() == 'done':
         print("\n--- Summary ---")
         if flag_correct == 1:
